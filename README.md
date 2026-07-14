@@ -1,5 +1,3 @@
-# alu-machine_learning
-
 # Convolutions and Pooling
 
 This project is part of the `alu-machine-learning` repository, under `math/convolutions_and_pooling`. It covers the fundamentals of convolutions and pooling operations on images — core building blocks of Convolutional Neural Networks (CNNs).
