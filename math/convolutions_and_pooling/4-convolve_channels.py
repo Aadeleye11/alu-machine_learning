@@ -34,4 +34,7 @@ def convolve_channels(images, kernel, padding='same', stride=(1, 1)):
 
     for i in range(output_h):
         for j in range(output_w):
-            window =
+            window = padded[:, i * sh:i * sh + kh, j * sw:j * sw + kw, :]
+            convolved[:, i, j] = np.sum(window * kernel, axis=(1, 2, 3))
+
+    return convolved
